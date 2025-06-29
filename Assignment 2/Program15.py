@@ -5,18 +5,24 @@
 #
 ###################################################################################################
 def Prime(Value):
-    Flag = False
-    if()
+    if(Value <= 1):
+        return False
         
-    return Add
-        
+    for i in range(2,int(Value/2)):
+        if((Value % i)==0):
+            return False
+    
+    return True
+    
 def main():
     print("Enter the number")
     No =int(input())
 
-    iRet =Factors(No)
-    print(iRet)
+    bRet = Prime(No)
+    if(bRet==True):
+        print("It is Prime number")
+    else:
+        print("It is not a prime number")    
     
-
 if __name__ =="__main__":
     main()
